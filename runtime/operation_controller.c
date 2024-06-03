@@ -3,10 +3,14 @@
 #include "program_operation.h"
 #include "../operations/reset_state.h"
 #include "../operations/exit_program.h"
+#include "../operations/print_list.h"
 
 operation_t g_operations_map[MAX_OPERATION_TYPE] = {
     [RESET_STATE] = {
         RESET_STATE_NAME, RESET_STATE_PROMPT, run_reset_state
+    },
+    [PRINT_LIST] = {
+        PRINT_LIST_NAME, PRINT_LIST_PROMPT, run_print_list
     },
     [EXIT_PROGRAM] = {
         EXIT_PROGRAM_NAME, EXIT_PROGRAM_PROMPT, run_exit_program
