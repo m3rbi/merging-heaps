@@ -4,10 +4,15 @@
 #include "../operations/reset_state.h"
 #include "../operations/exit_program.h"
 #include "../operations/print_list.h"
+#include "../operations/input_list.h"
+
 
 operation_t g_operations_map[MAX_OPERATION_TYPE] = {
     [RESET_STATE] = {
         RESET_STATE_NAME, RESET_STATE_PROMPT, run_reset_state
+    },
+    [INPUT_LIST] = {
+      INPUT_LIST_NAME, INPUT_LIST_PROMPT, run_input_list
     },
     [PRINT_LIST] = {
         PRINT_LIST_NAME, PRINT_LIST_PROMPT, run_print_list
