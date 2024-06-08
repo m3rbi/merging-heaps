@@ -5,6 +5,7 @@
 #include "../operations/exit_program.h"
 #include "../operations/print_list.h"
 #include "../operations/input_list.h"
+#include "../operations/build_min_heap.h"
 
 
 operation_t g_operations_map[MAX_OPERATION_TYPE] = {
@@ -19,7 +20,10 @@ operation_t g_operations_map[MAX_OPERATION_TYPE] = {
     },
     [EXIT_PROGRAM] = {
         EXIT_PROGRAM_NAME, EXIT_PROGRAM_PROMPT, run_exit_program
-    }
+    },
+    [BUILD_MIN_HEAP] = {
+        BUILD_MIN_HEAP_NAME, BUILD_MIN_HEAP_PROMPT, run_build_min_heap
+    },
 };
 
 const char *get_operation_name(operation_type_t operation_type) {

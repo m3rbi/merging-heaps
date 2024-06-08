@@ -7,6 +7,7 @@ typedef enum {
   RESET_STATE,
   INPUT_LIST,
   PRINT_LIST,
+  BUILD_MIN_HEAP,
   EXIT_PROGRAM,
   MAX_OPERATION_TYPE,
 } operation_type_t;
