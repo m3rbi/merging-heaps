@@ -8,6 +8,7 @@ typedef enum {
   INPUT_LIST,
   PRINT_LIST,
   BUILD_MIN_HEAP,
+  HEAP_SORT,
   EXIT_PROGRAM,
   MAX_OPERATION_TYPE,
 } operation_type_t;
