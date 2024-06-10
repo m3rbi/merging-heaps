@@ -9,6 +9,7 @@ typedef enum {
   PRINT_LIST,
   BUILD_MIN_HEAP,
   HEAP_SORT,
+  UNION_HEAPS,
   EXIT_PROGRAM,
   MAX_OPERATION_TYPE,
 } operation_type_t;
@@ -20,6 +21,7 @@ typedef enum {
   PROGRAM_EXIT,
   NULL_PTR_ERROR,
   LIST_PARSING_ERROR,
+  UNINITIALIZED_LIST,
 } operation_errcode_t;
 
 typedef operation_errcode_t (*operation_function_t)(

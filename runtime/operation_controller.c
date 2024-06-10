@@ -7,6 +7,7 @@
 #include "../operations/input_list.h"
 #include "../operations/build_min_heap.h"
 #include "../operations/heap_sort.h"
+#include "../operations/union_heaps.h"
 
 
 operation_t g_operations_map[MAX_OPERATION_TYPE] = {
@@ -27,6 +28,9 @@ operation_t g_operations_map[MAX_OPERATION_TYPE] = {
     },
     [HEAP_SORT] = {
         HEAP_SORT_NAME, HEAP_SORT_PROMPT, run_heap_sort
+    },
+    [UNION_HEAPS] = {
+        UNION_HEAPS_NAME, UNION_HEAPS_PROMPT, run_union_heaps
     },
 };
 
