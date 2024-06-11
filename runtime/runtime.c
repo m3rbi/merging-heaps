@@ -36,6 +36,17 @@ operation_errcode_t handle_chosen_operation(program_state_t *state,
 }
 
 void run_program(program_state_t *state) {
+  char is_sorted_buffer[COMMAND_BUFFER_SIZE];
+  memset(is_sorted_buffer, 0, sizeof(is_sorted_buffer));
+
+  while (is_sorted_buffer[0] != 'y' && is_sorted_buffer[0] != 'n') {
+    if (get_input("Are the lists provided sorted? [y/n]", is_sorted_buffer,
+                  sizeof(is_sorted_buffer)) != 0) {
+      printf("Enter y/n only!\n");
+    }
+  }
+  state->is_sorted = is_sorted_buffer[0] == 'y';
+
   while (1) {
     printf("-----------------------------\n");
     print_all_operations();
