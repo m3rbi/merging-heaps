@@ -8,6 +8,7 @@
 #include "../operations/build_min_heap.h"
 #include "../operations/heap_sort.h"
 #include "../operations/union_heaps.h"
+#include "../operations/insert_node.h"
 
 
 operation_t g_operations_map[MAX_OPERATION_TYPE] = {
@@ -31,6 +32,9 @@ operation_t g_operations_map[MAX_OPERATION_TYPE] = {
     },
     [UNION_HEAPS] = {
         UNION_HEAPS_NAME, UNION_HEAPS_PROMPT, run_union_heaps
+    },
+    [INSERT_NODE] = {
+        INSERT_NODE_NAME, INSERT_NODE_PROMPT, run_insert_node
     },
 };
 

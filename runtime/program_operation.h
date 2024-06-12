@@ -10,6 +10,7 @@ typedef enum {
   BUILD_MIN_HEAP,
   HEAP_SORT,
   UNION_HEAPS,
+  INSERT_NODE,
   EXIT_PROGRAM,
   MAX_OPERATION_TYPE,
 } operation_type_t;
