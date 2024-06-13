@@ -17,18 +17,17 @@ typedef struct linked_list_t {
 
 /**
  * Allocates a new linked list.
- * 
+ *
  * @return A pointer to the newly created linked list.
  */
 linked_list_t *create_list();
 
-
 /**
  * Destroys a linked list and frees the memory allocated for it.
  *
- * This function deallocates all the nodes in the linked list and frees the memory
- * occupied by them. After calling this function, the linked list will be empty
- * and the memory previously used by it will be released.
+ * This function deallocates all the nodes in the linked list and frees the
+ * memory occupied by them. After calling this function, the linked list will be
+ * empty and the memory previously used by it will be released.
  *
  * @param list A pointer to the linked list to be destroyed.
  */
@@ -37,7 +36,8 @@ void destroy_list(linked_list_t *list);
 /**
  * Creates a new node with the given value.
  *
- * This function allocates a new node with the specified value and returns a pointer to it.
+ * This function allocates a new node with the specified value and returns a
+ * pointer to it.
  *
  * @param value The value to be stored in the node.
  * @return A pointer to the newly created node.
@@ -66,10 +66,10 @@ int add_last(linked_list_t *list, node_t *node);
  * Removes and returns the last node from the linked list.
  *
  * @param list A pointer to the linked list.
- * @return A pointer to the last node in the linked list, or NULL if the list is empty.
+ * @return A pointer to the last node in the linked list, or NULL if the list is
+ * empty.
  */
 node_t *pop_last(linked_list_t *list);
-
 
 /**
  * Adds a node to the beginning of the linked list.
@@ -84,7 +84,8 @@ int add_first(linked_list_t *list, node_t *node);
  * Removes and returns the first node from the linked list.
  *
  * @param list A pointer to the linked list.
- * @return A pointer to the first node in the linked list, or NULL if the list is empty.
+ * @return A pointer to the first node in the linked list, or NULL if the list
+ * is empty.
  */
 node_t *pop_first(linked_list_t *list);
 
@@ -93,7 +94,8 @@ node_t *pop_first(linked_list_t *list);
  *
  * @param list A pointer to the linked list.
  * @param index The index of the node to retrieve.
- * @return A pointer to the node at the specified index, or NULL if the index is out of bounds.
+ * @return A pointer to the node at the specified index, or NULL if the index is
+ * out of bounds.
  */
 node_t *get_node(linked_list_t *list, size_t index);
 
@@ -102,7 +104,8 @@ node_t *get_node(linked_list_t *list, size_t index);
  *
  * @param list A pointer to the linked list.
  * @param index The index of the node to remove.
- * @return A pointer to the removed node, or NULL if the index is out of bounds, or the list is empty.
+ * @return A pointer to the removed node, or NULL if the index is out of bounds,
+ * or the list is empty.
  */
 node_t *pop_node(linked_list_t *list, size_t index);
 

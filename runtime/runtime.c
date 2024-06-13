@@ -5,11 +5,11 @@
 #include <string.h>
 #include <sys/_types/_size_t.h>
 
+#include "../consts/consts.h"
+#include "../io/input_utils.h"
 #include "operation_controller.h"
 #include "program_operation.h"
 #include "program_state.h"
-#include "../io/input_utils.h"
-#include "../consts/consts.h"
 
 void print_all_operations() {
   printf("Select operation -\n");
@@ -21,7 +21,7 @@ void print_all_operations() {
 }
 
 operation_errcode_t handle_chosen_operation(program_state_t *state,
-                                             operation_type_t operation_type) {
+                                            operation_type_t operation_type) {
   const char *prompt = get_operation_prompt(operation_type);
   if (!prompt) {
     return execute_operation(state, operation_type, NULL);

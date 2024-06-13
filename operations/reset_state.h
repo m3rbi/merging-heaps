@@ -16,7 +16,8 @@
  *
  * @param state A pointer to the program state structure.
  * @param args  The arguments passed to the function (not used in this case).
- * @return An operation error code indicating the success or failure of the operation.
+ * @return An operation error code indicating the success or failure of the
+ * operation.
  */
 operation_errcode_t run_reset_state(program_state_t *state, const char *args);
 

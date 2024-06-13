@@ -13,7 +13,8 @@
  *
  * @param state A pointer to the program state.
  * @param args Expects a single character argument indicating the list to print.
- * @return An operation_errcode_t value indicating the success or failure of the operation.
+ * @return An operation_errcode_t value indicating the success or failure of the
+ * operation.
  */
 operation_errcode_t run_print_list(program_state_t *state, const char *args);
 

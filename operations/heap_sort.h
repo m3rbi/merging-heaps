@@ -11,7 +11,8 @@
  *
  * @param state A pointer to the program state.
  * @param args Expected to be a single character indicating the list to sort.
- * @return An operation error code indicating the success or failure of the operation.
+ * @return An operation error code indicating the success or failure of the
+ * operation.
  */
 operation_errcode_t run_heap_sort(program_state_t *state, const char *args);
 

@@ -11,13 +11,14 @@
 /**
  * Performs the union operation on two heaps.
  *
- * This function merges the two specified lists into a single minimum heap, stored in `list_a`.
- * The original list in `list_a` is destroyed, and a new list is created in its place.
- * The original list in `list_b` is destroyed.
+ * This function merges the two specified lists into a single minimum heap,
+ * stored in `list_a`. The original list in `list_a` is destroyed, and a new
+ * list is created in its place. The original list in `list_b` is destroyed.
  *
  * @param state A pointer to the program state.
  * @param args  The arguments passed to the function (not used in this case).
- * @return An operation_errcode_t value indicating the success or failure of the operation.
+ * @return An operation_errcode_t value indicating the success or failure of the
+ * operation.
  */
 operation_errcode_t run_union_heaps(program_state_t *state, const char *args);
 

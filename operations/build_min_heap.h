@@ -10,9 +10,12 @@
  * Modifies one of the program's lists to be a minimum heap.
  *
  * @param state A pointer to the program state.
- * @param args  Expects a single character argument indicating the list to build the heap from.
- * @return      An operation error code indicating the success or failure of the operation.
+ * @param args  Expects a single character argument indicating the list to build
+ * the heap from.
+ * @return      An operation error code indicating the success or failure of the
+ * operation.
  */
-operation_errcode_t run_build_min_heap(program_state_t *state, const char *args);
+operation_errcode_t run_build_min_heap(program_state_t *state,
+                                       const char *args);
 
 #endif // OPERATIONS_BUILD_MIN_HEAP_H_

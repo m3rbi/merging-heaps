@@ -4,7 +4,8 @@
 #include <stddef.h>
 
 /**
- * Reads user input from the console and stores it in the provided character array.
+ * Reads user input from the console and stores it in the provided character
+ * array.
  *
  * @param prompt The prompt message to display to the user.
  * @param result The character array to store the user input.

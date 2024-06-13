@@ -13,7 +13,7 @@ int get_input(const char *prompt, char *result, const size_t result_size) {
   if (fgets(result, result_size, stdin) <= 0) {
     return -1;
   }
-  
+
   strtok(result, "\n");
 
   return 0;
